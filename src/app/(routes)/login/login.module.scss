@@ -1,0 +1,147 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  
+    background: linear-gradient(135deg, #e0e7ff, #fef3c7); // Soft gradient
+  
+    // Optional background shape
+    position: relative;
+    overflow: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15), transparent 70%);
+      border-radius: 50%;
+      top: -100px;
+      left: -100px;
+      z-index: 0;
+    }
+  }
+  
+  .login-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+  
+    @media (max-width: 480px) {
+      padding: 20px;
+    }
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .logoText {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0052cc;
+    font-family: 'Poppins', sans-serif;
+  
+    &::after {
+      content: ".";
+      color: #00bfa6;
+    }
+  }
+  .login-form h2 {
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 20px;
+    font-size: 20px;
+  
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  
+    label {
+      display: block;
+      font-size: 14px;
+      color: #5e6c84;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dfe1e6;
+      border-radius: 4px;
+      font-size: 14px;
+  
+      &:focus {
+        border-color: #0052cc;
+        outline: none;
+      }
+    }
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0052cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  
+    &:hover {
+      background-color: #0747a6;
+    }
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 15px;
+  
+    a {
+      color: #0052cc;
+      text-decoration: none;
+      font-size: 14px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .google-login {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  
+    svg {
+      margin-right: 8px;
+    }
+  }
+  

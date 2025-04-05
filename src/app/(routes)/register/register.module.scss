@@ -1,0 +1,144 @@
+.registerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    // background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    background: linear-gradient(135deg, #e0e7ff, #fef3c7); // Soft gradient
+
+  }
+  
+  .registerBox {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .logoText {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0052cc;
+    font-family: 'Poppins', sans-serif;
+  
+    &::after {
+      content: ".";
+      color: #00bfa6;
+    }
+  }
+  .registerForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registerForm h2 {
+    text-align: center;
+    color: #172b4d;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  
+    label {
+      display: block;
+      font-size: 14px;
+      color: #5e6c84;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dfe1e6;
+      border-radius: 4px;
+      font-size: 14px;
+  
+      &:focus {
+        border-color: #0052cc;
+        outline: none;
+      }
+    }
+  }
+  
+  .registerButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #0052cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  
+    &:hover {
+      background-color: #0747a6;
+    }
+  }
+  
+  .googleAuth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    color: #333;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+  
+  .googleIcon {
+    color: #db4437;
+    font-size: 18px;
+  }
+  
+  .formFooter {
+    text-align: center;
+    margin-top: 15px;
+  
+    a {
+      color: #0052cc;
+      text-decoration: none;
+      font-size: 14px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .registerBox {
+      padding: 20px;
+    }
+  
+    .logo h1 {
+      font-size: 26px;
+    }
+  
+    .registerForm h2 {
+      font-size: 18px;
+    }
+  }
+  

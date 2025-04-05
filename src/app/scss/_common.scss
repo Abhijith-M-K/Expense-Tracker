@@ -1,0 +1,113 @@
+.navbar-nav {
+    .nav-link {
+        &.active {
+            color: #1A469D !important;
+            font-weight: 600;
+        }
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Adjust as needed */
+    }
+}
+
+.carousel-fade .carousel-item {
+    // transition:  transform 1s ease-in-out;
+  }
+
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0.4;}
+  }
+  #blinking-text {
+    animation: blink 1s linear infinite;
+  }
+
+  body {
+    &.modal-open {
+        padding-right: 0 !important;
+        overflow-y: hidden;
+    }
+  }
+
+  .modal {
+    &.confirmation-modal {
+        padding-right: 0 !important;
+        .modal-dialog {
+            // height: 100%;
+            // margin-bottom: 0;
+            // margin-top: 0;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: center;
+            margin-top: 200px;
+            max-width: 470px;
+            .modal-content {
+            border: 0;
+                .modal-header {
+                    padding: 15px;
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                    h1 {
+                        display: none;
+                    }
+                    button {
+                        display: none;
+                    }
+                }
+                .modal-body {
+                    padding-bottom: 0;
+                    text-align: center;
+                    padding-top: 17px;
+                    h4 {
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                    }
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+                .modal-footer {
+                    border-top: 0;
+                    text-align: center;
+                    justify-content: center;
+                    gap: 10px;
+                    padding-bottom: 20px;
+                    .btn {
+                        width: 100%;
+                        max-width: 132px;
+                        padding: 10px;
+                        font-size: 0.85rem;
+                        &.btn-secondary {
+                            background-color: transparent;
+                            color: #000;
+                            display: inline-block;
+                            border-width: 1px 1px 3px;
+                            border-color: #093489;
+                            border-radius: 6px;
+                        }
+                        &.btn-primary {
+                             display: inline-block;
+                             background: #1a469d;
+                             border-width: 1px 1px 3px;
+                             border-color: #093489;
+                             border-radius: 6px;
+                             color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+@media (max-width: 992px) {
+    #homepage {
+        section {
+            .container {
+                max-width: 100%;
+            }
+        }
+    }
+}
