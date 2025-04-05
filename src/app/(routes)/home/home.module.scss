@@ -1,0 +1,104 @@
+    .homeWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    // background: linear-gradient(135deg, #e0e7ff, #fef3c7);
+    font-family: Arial, sans-serif;
+  }
+  
+  .menuBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #222;
+    background-color: #0052cc;
+
+    color: white;
+    padding: 1rem;
+  
+    .logoText {
+                font-size: 32px;
+                    font-weight: 700;
+                    font-family: 'Poppins', sans-serif;
+                
+                    &::after {
+                        content: ".";
+                        color: #00bfa6;
+                    }
+                }
+  
+    .menuLinks {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+  
+      li {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .homeContainer {
+    padding: 1rem 2rem;
+  
+    .breadcrumb {
+      font-size: 0.9rem;
+      color: #555;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+  
+      .separator {
+        margin: 0 0.5rem;
+      }
+    }
+  
+    .header {
+      margin-bottom: 2rem;
+  
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  
+    .graphsGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .chartHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+  
+      h2 {
+        font-size: 1.25rem;
+      }
+  
+      select {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    }
+  
+    .pieChartContainer,
+    .lineChartContainer {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
