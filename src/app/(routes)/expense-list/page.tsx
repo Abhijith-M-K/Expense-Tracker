@@ -1,4 +1,3 @@
-// ExpenseListPage.tsx
 "use client";
 import React, { useState } from "react";
 import styles from "./expense-list.module.scss";
