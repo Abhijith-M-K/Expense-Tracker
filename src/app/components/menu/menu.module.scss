@@ -1,0 +1,77 @@
+
+.menuBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0052cc;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoText {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  
+    &::after {
+      content: ".";
+      color: #00bfa6;
+    }
+  }
+  
+  .menuLinks {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      cursor: pointer;
+  
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #00bfa6;
+        }
+      }
+    }
+  
+    // Responsive mobile menu
+    @media (max-width: 768px) {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #0052cc;
+      width: 200px;
+      padding: 1rem;
+      border-radius: 0 0 0.75rem 0.75rem;
+      display: none;
+  
+      &.showMenu {
+        display: flex;
+      }
+    }
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+  
