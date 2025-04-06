@@ -1,87 +1,95 @@
-.expenseListWrapper {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  .breadcrumb {
-    font-size: 0.9rem;
-    color: #555;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    .separator {
-      margin: 0 0.5rem;
+.expenseListWrapper {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  .separator {
+    margin: 0 0.5rem;
+  }
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .addButton {
+    background-color: #0088fe;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: #0070d9;
     }
   }
-  
-  .headerRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 0;
-    }
-  
-    .addButton {
-      background-color: #0088fe;
-      color: white;
-      border: none;
-      padding: 0.6rem 1rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      font-size: 0.9rem;
-  
-      &:hover {
-        background-color: #0070d9;
-      }
-    }
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  .dateFilter,
+  .categoryFilter {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
   }
-  
-  .filters {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  
-    .dateFilter,
-    .categoryFilter {
-      padding: 0.5rem;
-      border-radius: 0.4rem;
-      border: 1px solid #ccc;
-      font-size: 0.9rem;
-    }
+}
+
+.expenseTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 0.75rem;
+  overflow: hidden;
+
+  th,
+  td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
   }
-  
-  .expenseTable {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    border-radius: 0.75rem;
-    overflow: hidden;
-  
-    th, td {
-      padding: 1rem;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-    }
-  
-    th {
-      background-color: #f0f0f0;
-      font-weight: 600;
-    }
-  
-    tr:last-child td {
-      border-bottom: none;
-    }
-  
-    td {
-      font-size: 0.95rem;
-      color: #333;
-    }
+
+  th {
+    background-color: #f0f0f0;
+    font-weight: 600;
   }
-  
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  td {
+    font-size: 0.95rem;
+    color: #333;
+  }
+}

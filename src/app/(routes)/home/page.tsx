@@ -17,6 +17,7 @@ import {
 } from "recharts";
 import styles from "./home.module.scss";
 import Menu from "@/app/components/menu/menu";
+import Footer from "@/app/components/footer/footer";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AA00FF", "#FF4081"];
 
@@ -126,6 +127,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

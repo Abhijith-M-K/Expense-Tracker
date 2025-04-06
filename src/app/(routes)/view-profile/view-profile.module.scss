@@ -1,0 +1,74 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Ensures full height of the screen
+    background-color: #f5f6fa;
+  }
+  
+  .profileWrapper {
+    flex: 1; // Takes all available vertical space between Menu and Footer
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 90%;
+  }
+  
+  .breadcrumb {
+        font-size: 0.9rem;
+        color: #555;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        padding-top:15px;
+        padding-left: 40px;
+        .separator {
+          margin: 0 0.5rem;
+        }
+      }
+  .heading {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .profileCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .profileRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+  
+    span {
+      color: #666;
+    }
+  }
+  .logoutButton {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background-color: #e04345;
+    }
+  }
+  

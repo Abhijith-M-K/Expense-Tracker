@@ -29,7 +29,7 @@ const MenuBar: React.FC = () => {
           <Link href="/expense-list"><span>Expenses</span></Link>
         </li>
         <li>
-          <Link href="/profile"><span>Profile</span></Link>
+          <Link href="/view-profile"><span>Profile</span></Link>
         </li>
       </ul>
     </div>
